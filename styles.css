@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #00aaff, #0044cc);
+    /* Blue gradient background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.time-display {
+    font-size: 64px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #00aaff, #0044cc);
+    /* Blue gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    color: white;
+}
+
+#start-button {
+    background: #00aaff;
+    /* Light blue */
+}
+
+#pause-button {
+    background: #0099cc;
+    /* Medium blue */
+}
+
+#reset-button {
+    background: #0077b3;
+    /* Dark blue */
+}
+
+#lap-button {
+    background: #0044cc;
+    /* Very dark blue */
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps li {
+    font-size: 16px;
+    color: #333;
+    background: #e0f7ff;
+    /* Light blue background for lap items */
+    border-radius: 6px;
+    margin-bottom: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
